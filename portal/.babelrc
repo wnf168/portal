@@ -1,0 +1,13 @@
+{
+  "presets": [
+    ["env", {
+      "modules": false,
+      "targets": {
+        "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
+      }
+    }],
+    "stage-2"
+  ],
+  "plugins": ["transform-vue-jsx", "transform-runtime"],
+  "ignore":["./src/assets/zThree/js/jquery-migrate-1.2.1.js","./src/assets/zThree/js/jquery.ztree.all-3.5.min.js","./src/assets/zThree/js/jquery.ztree.exhide-3.5.min.js"]
+}
