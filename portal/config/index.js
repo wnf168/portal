@@ -12,7 +12,8 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api':{
-        target: 'http://rap.xy999888.com/mockjsdata/43',
+        // target: 'http://rap.xy999888.com/mockjsdata/43',
+        target: 'http://192.168.1.249:8888/portal_577',
         changeOrigin: true, 
         pathRewrite: {
           '^/api': '/'

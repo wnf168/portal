@@ -8,7 +8,10 @@ import router from './router'
 import $ from 'jquery'
 Vue.config.productionTip = false
 Vue.use(ElementUI);
+import { get, post } from './utils/http';
 
+Vue.prototype.$get = get;
+Vue.prototype.$post = post;
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

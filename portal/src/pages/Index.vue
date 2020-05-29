@@ -162,6 +162,6 @@ import http from "axios"
 }
 </script>
 
-<style lang="scss" scoped>
+<style  scoped>
 
 </style>
