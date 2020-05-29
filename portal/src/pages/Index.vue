@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import "@/assets/zThree/css/zTreeStyle.css"
+// import "@/assets/zThree/css/zTreeStyle.css"
 import "@/assets/zThree/js/jquery-migrate-1.2.1.js"
 import "@/assets/zThree/js/jquery.ztree.all-3.5.min.js"
 import "@/assets/zThree/js/jquery.ztree.exhide-3.5.min.js"
@@ -157,11 +157,76 @@ import http from "axios"
 			},
   },
   mounted(){
-    this.priseData();
+   // this.priseData();
   }
 }
 </script>
 
 <style  scoped>
-
+.example{
+			float:left;
+			width:50%;
+		}
+		.enterpriseData{
+			width:350px;
+			overflow-y: scroll;
+		}
+		.enterpriseList ul li{
+			width:143px;
+		}
+		.enterpriseDatascroll{
+			overflow-y: scroll;
+		}
+		.listdata{
+			margin: 0px 20px;
+			text-align: center;
+			display: inline-block;
+			cursor: pointer;
+		}
+		.enterpriseDatascroll::-webkit-scrollbar {
+			/*滚动条整体样式*/
+			width : 10px;  /*高宽分别对应横竖滚动条的尺寸*/
+			height: 1px;
+		}
+		.enterpriseDatascroll::-webkit-scrollbar-thumb {
+			/*滚动条里面小方块*/
+			border-radius: 10px;
+			box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2);
+			background   : #3E8EF7;
+		}
+		.enterpriseDatascroll::-webkit-scrollbar-track {
+			/*滚动条里面轨道*/
+			box-shadow   : inset 0 0 5px rgba(0, 0, 0, 0.2);
+			border-radius: 10px;
+			background   : #ededed;
+		}
+		.enterFactory{
+			color:green;
+		}
+		.research{
+			color:orange;
+		}
+		.roadwork{
+			color:crimson;
+		}
+		.datainput{
+			padding-left: 10px;
+		}
+		.searchtree{
+			width: 200px;
+			height: 30px;
+			line-height: 30px;
+			padding-left: 12px;
+			border-radius: 4px;
+			border: 1px solid #ddd;
+			margin-left: 12px;
+		}
+		.amap-controls{
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 64px;
+			height: 64px;
+			z-index: 155;
+		}
 </style>

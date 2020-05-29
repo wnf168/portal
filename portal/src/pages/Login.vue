@@ -64,7 +64,8 @@ import {loginapi} from 'api/login'
               tm:new Date().getTime()
           }
           loginapi(params).then(data=>{
-            this.$router.push("/index")
+            // console.log(data)
+            this.$router.push("/gis")
           })
       }
     }

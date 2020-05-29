@@ -11,19 +11,19 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/api':{
-        // target: 'http://rap.xy999888.com/mockjsdata/43',
-        target: 'http://192.168.1.249:8888/portal_577',
+      '/devapi':{
+        target: 'http://rap.xy999888.com/mockjsdata/43',
+        // target: 'http://192.168.1.249:8888/portal_577',
         changeOrigin: true, 
         pathRewrite: {
-          '^/api': '/'
+          '^/devapi': '/'
         }
       }
     },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
-    port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+    port: 5600, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,
