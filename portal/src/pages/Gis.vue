@@ -1,18 +1,18 @@
 <template>
     <div class="gis">
         <Head></Head>
-        <Map></Map> 
+        <keep-alive>
+            <router-view></router-view>   
+        </keep-alive>    
     </div>
 </template>
 
 <script>
     import Head from 'com/Head'
-    import Map from 'com/Map'
     export default {
         name:"gis",
         components:{
-            Head,
-            Map
+            Head
         }
     }
 </script>

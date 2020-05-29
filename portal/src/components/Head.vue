@@ -53,7 +53,14 @@ export default {
     zTreeclick(event,treeId,treeNode){
 				if(treeNode.R_ID){
 					console.log(treeNode.R_ID,treeNode.RIGHTS,treeNode.name)
-					// this.goindex(treeNode.R_ID,treeNode.RIGHTS,treeNode.name)
+          // this.goindex(treeNode.R_ID,treeNode.RIGHTS,treeNode.name)
+          let query = {};
+          query.rid = treeNode.R_ID;
+          query.name = treeNode.name;
+          this.$router.push({
+              path:'/gis/home',
+              query
+          })
 				}
 			},
     priseData(){
@@ -278,6 +285,7 @@ ul li {
   z-index: 3;
   padding-top: 0px;
   color: #323232;
+  overflow-y: scroll;
 }
 [v-cloak] {
   display: none;
