@@ -5,10 +5,16 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import App from './App'
 import router from './router'
-import $ from 'jquery'
+import store from './store'
+import Router from 'vue-router'
 Vue.config.productionTip = false
 Vue.use(ElementUI);
 import { get, post } from './utils/http';
+
+const originalPush = Router.prototype.push
+Router.prototype.push = function push(location) {
+  return originalPush.call(this, location).catch(err => err)
+}
 
 Vue.prototype.$get = get;
 Vue.prototype.$post = post;
@@ -16,6 +22,7 @@ Vue.prototype.$post = post;
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

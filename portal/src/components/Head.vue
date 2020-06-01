@@ -52,15 +52,14 @@ export default {
     },
     zTreeclick(event,treeId,treeNode){
 				if(treeNode.R_ID){
-					// console.log(treeNode.R_ID,treeNode.RIGHTS,treeNode.name)
-          // this.goindex(treeNode.R_ID,treeNode.RIGHTS,treeNode.name)
           let query = {};
           query.rid = treeNode.R_ID;
           query.name = treeNode.name;
+          this.$store.commit('setRid',query);
           this.$router.push({
               name:'Home',
-              // query
           })
+          this.isEnterprise = !this.isEnterprise;
 				}
 			},
     priseData(){
