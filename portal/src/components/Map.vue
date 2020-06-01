@@ -121,6 +121,7 @@ var map;
 </script>
 <style>
 .mapcenter {
+	width: 100%;
     height: 90%;
     height: -moz-calc(100% - 60px);
     height: -webkit-calc(100% - 60px);

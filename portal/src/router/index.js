@@ -1,25 +1,39 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Login from 'pages/Login'
-import Index from 'pages/Index'
 import Gis from 'pages/Gis'
 import Map from 'com/Map'
+import Momicenter from 'com/Momicenter'
 
 import Home from 'pages/Home'
+import waterData from 'com/waterData'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/login',
       name: 'Login',
       component: Login
     },
     {
-      path: '/index',
-      name: 'Index',
-      component: Index
+      path: '/',
+      name: 'Home',
+      component: Home,
+      redirect:'momicenter',
+      children:[
+        {
+          path: '/momicenter',
+          name: 'momicenter',
+          component: Momicenter
+        },
+        {
+          path: '/waterData',
+          name: 'waterData',
+          component: waterData
+        },
+      ]
     },
     {
       path: '/gis',
@@ -30,12 +44,8 @@ export default new Router({
           path: '/',
           name: 'Map',
           component: Map
-        },
-        {
-          path: 'home',
-          name: 'Home',
-          component: Home
         }
+        
       ]
     }
   ]

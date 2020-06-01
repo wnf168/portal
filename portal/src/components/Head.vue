@@ -48,18 +48,18 @@ export default {
       this.isEnterprise = !this.isEnterprise;
     },
     loginouthander() {
-      this.$router.push("/");
+      this.$router.push("/login");
     },
     zTreeclick(event,treeId,treeNode){
 				if(treeNode.R_ID){
-					console.log(treeNode.R_ID,treeNode.RIGHTS,treeNode.name)
+					// console.log(treeNode.R_ID,treeNode.RIGHTS,treeNode.name)
           // this.goindex(treeNode.R_ID,treeNode.RIGHTS,treeNode.name)
           let query = {};
           query.rid = treeNode.R_ID;
           query.name = treeNode.name;
           this.$router.push({
-              path:'/gis/home',
-              query
+              name:'Home',
+              // query
           })
 				}
 			},
