@@ -6,7 +6,8 @@ import Map from 'com/Map'
 import Momicenter from 'com/Momicenter'
 
 import Home from 'pages/Home'
-import waterData from 'com/waterData'
+import shiData from 'pages/shiData'
+import shiDatapai from 'pages/shiDatapai'
 
 Vue.use(Router)
 
@@ -29,9 +30,14 @@ export default new Router({
           component: Momicenter
         },
         {
-          path: '/waterData',
-          name: 'waterData',
-          component: waterData
+          path: '/shiData',
+          name: 'shiData',
+          component: shiData
+        },
+        {
+          path: '/shiDatapai',
+          name: 'shiDatapai',
+          component: shiDatapai
         },
       ]
     },

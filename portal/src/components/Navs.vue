@@ -22,8 +22,8 @@
                 <span>实时监测</span>
               </template>
               <el-menu-item-group>
-                <el-menu-item index="/waterData">实时水量数据</el-menu-item>
-                <el-menu-item index="">实时排口液位</el-menu-item>
+                <el-menu-item index="/shiData">实时水量数据</el-menu-item>
+                <el-menu-item index="/shiDatapai">实时排口液位</el-menu-item>
                 <el-menu-item index="">水平衡分析(30天)</el-menu-item>
                 <el-menu-item index="">实时水质数据</el-menu-item>
                 <el-menu-item index="">污染物排放量</el-menu-item>
