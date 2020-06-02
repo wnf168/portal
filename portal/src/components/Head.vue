@@ -56,10 +56,14 @@ export default {
           query.rid = treeNode.R_ID;
           query.name = treeNode.name;
           this.$store.commit('setRid',query);
+          var names = this.$router.apps[0]._route.name;
+          if(names=='Map' || names=='momicenter'){
+             names = "Home"
+          }    
           this.$router.push({
-              name:'Home',
+              name:names
           })
-          this.isEnterprise = !this.isEnterprise;
+          // this.isEnterprise = !this.isEnterprise;
 				}
 			},
     priseData(){

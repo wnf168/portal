@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import createVuexAlong from 'vuex-along'
 Vue.use(Vuex)
 const store = new Vuex.Store({
     state :{
@@ -9,7 +10,8 @@ const store = new Vuex.Store({
         setRid(state,pload){
             state.rid = pload.rid;
         }
-    }
+    },
+    plugins: [createVuexAlong()]
 });
 
 export default store;
