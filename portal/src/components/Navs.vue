@@ -8,31 +8,28 @@
             :default-active="$route.path"
           >
           <el-menu-item index="/gis">
-              <i class="el-icon-menu"></i>
+              <i class="el-icon-place"></i>
               <span slot="title">GIS地图</span>
             </el-menu-item>
             <el-menu-item index="/momicenter">
-              <i class="el-icon-menu"></i>
+              <i class="el-icon-s-platform"></i>
               <span slot="title">监测中心</span>
             </el-menu-item>
 
             <el-submenu index="3">
               <template slot="title">
-                <i class="el-icon-location"></i>
+                <i class="el-icon-loading"></i>
                 <span>实时监测</span>
               </template>
               <el-menu-item-group>
                 <el-menu-item index="/shiData">实时水量数据</el-menu-item>
                 <el-menu-item index="/shiDatapai">实时排口液位</el-menu-item>
-                <el-menu-item index="">水平衡分析(30天)</el-menu-item>
-                <el-menu-item index="">实时水质数据</el-menu-item>
-                <el-menu-item index="">污染物排放量</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
             
             <el-submenu index="">
               <template slot="title">
-                <i class="el-icon-location"></i>
+                <i class="el-icon-notebook-2"></i>
                 <span>统计分析</span>
               </template>
               <el-menu-item-group>

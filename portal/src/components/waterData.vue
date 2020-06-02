@@ -14,7 +14,7 @@
           <div class="panel-body" style="padding-top:5px;padding-bottom:40px;">
             <div style="margin:0;padding:0;height: 100%">
               <div
-                style="clear:both ;width:110%; margin:0;padding:0;height:70px;padding-top: 20px;"
+                style="margin:0;padding:0;height:70px;padding-top: 20px;"
                 v-for="item in waterData"
                 :key="item.id"
               >

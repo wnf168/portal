@@ -2,7 +2,7 @@
   <el-container style="height:100%;">
     <el-header><Head></Head></el-header>
     <el-container>
-    <el-aside width="200px"><Navs></Navs></el-aside>
+    <el-aside width="170px"><Navs></Navs></el-aside>
     <el-main>
             <router-view></router-view>
     </el-main>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="height:100%;">
     <waterData :waterTitle="waterTitle" :waterData="waterData"></waterData>
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="height:100%;">
     <waterData :waterTitle="waterTitle" :waterData="waterData"></waterData>
   </div>
 </template>
@@ -24,11 +24,11 @@ export default {
               },
               {
                   name:"总流量(m³)",
-                  num:13
+                  num:11
               },
               {
                   name:"流速(m/s)",
-                  num:11
+                  num:111
               }
           ]
         },
@@ -37,15 +37,15 @@ export default {
           childData:[
               {
                   name:"瞬时流量(m³/h)",
-                  num:12
+                  num:122
               },
               {
                   name:"总流量(m³)",
-                  num:13
+                  num:132
               },
               {
                   name:"流速(m/s)",
-                  num:11
+                  num:112
               }
           ]
         },
@@ -54,15 +54,15 @@ export default {
           childData:[
               {
                   name:"瞬时流量(m³/h)",
-                  num:12
+                  num:123
               },
               {
                   name:"总流量(m³)",
-                  num:13
+                  num:133
               },
               {
                   name:"流速(m/s)",
-                  num:11
+                  num:113
               }
           ]
         }
